@@ -1,25 +1,64 @@
-# 🎯 Objectif du projet
+# 🌱 Prédiction du CO₂ échangé par les écosystèmes (NEE) avec LSTM
 
-Utiliser un modèle de deep learning (ici un LSTM) pour prédire le comportement du CO₂ net échangé par les écosystèmes terrestres (le NEE_VUT_REF) à partir de conditions météorologiques passées avec les données du
-[dataset  FLUXNET2015](https://fluxnet.org/data/fluxnet2015-dataset/)
-# Contexte environnemental :
-Le NEE (Net Ecosystem Exchange) est un indicateur essentiel pour évaluer si un écosystème absorbe ou émet du CO₂.
+## 🎯 Objectif
 
-En le modélisant, ce projet aide à :
+Ce projet utilise un modèle de Deep Learning (LSTM) pour prédire le **Net Ecosystem Exchange (NEE_VUT_REF)**, un indicateur clé des flux de CO₂ dans les écosystèmes terrestres, à partir de conditions météorologiques passées issues du jeu de données [FLUXNET2015](https://fluxnet.org/data/fluxnet2015-dataset/).
 
-* Comprendre l’impact du climat (température, humidité, rayonnement, etc.) sur le cycle du carbone.
+[![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tonutilisateur/ton-repo/blob/main/ton_notebook.ipynb)
 
-* Contribuer à la modélisation des changements climatiques.
+---
 
-* Prédire la dynamique du carbone dans différents biomes (forêt, prairie, etc.).
+## 🌍 Contexte environnemental
 
-# 🔍 Ce que fait concrètement ton pipeline :
-Prend les données journalières FLUXNET2015 (température, humidité, rayonnement, etc.).
+Le **NEE (Net Ecosystem Exchange)** permet de mesurer si un écosystème **absorbe** (puits de carbone) ou **émet** (source de carbone) du CO₂.
 
-* Crée des séquences temporelles de 30 jours d’entrée.
+👉 En modélisant cette variable, ce projet vise à :
+- Comprendre l’influence du climat (température, humidité, rayonnement…) sur le cycle du carbone.
+- Contribuer à la modélisation des effets du changement climatique.
+- Prédire les dynamiques de carbone dans divers biomes (forêts, prairies…).
 
-* Utilise un modèle LSTM pour prédire le NEE_VUT_REF du jour suivant.
+---
 
-* Évalue les performances (MAE, RMSE, R²).
+## 🔧 Pipeline du projet
 
-* Visualise les prédictions vs la vérité.
+Le modèle suit les étapes suivantes :
+
+1. **Chargement des données** FLUXNET2015 journalières (température, humidité, radiations…).
+2. **Prétraitement** et création de séquences temporelles de 30 jours.
+3. **Entraînement** d’un modèle LSTM pour prédire le `NEE_VUT_REF` du jour suivant.
+4. **Évaluation** des performances avec :
+   - MAE (Mean Absolute Error)
+   - RMSE (Root Mean Square Error)
+   - R² Score
+5. **Visualisation** des prédictions vs valeurs réelles.
+
+---
+
+## 📁 Données utilisées
+
+- 📊 Source : [FLUXNET2015 Dataset](https://fluxnet.org/data/fluxnet2015-dataset/)
+- 📍 Exemple de site : US-Ha1 (Harvard Forest)
+
+---
+
+## 🚀 Exécution rapide dans Google Colab
+
+Cliquez sur le badge ci-dessous pour lancer le notebook sans installation :
+
+[![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tonutilisateur/ton-repo/blob/main/ton_notebook.ipynb)
+
+---
+
+## 📌 À venir
+
+- Intégration multi-sites FLUXNET.
+- Optimisation du modèle (hyperparamètres).
+- Comparaison avec d'autres architectures (GRU, Transformer…).
+
+---
+
+## 👤 Auteur
+
+- Dixy Prevner M'POUTOU
+- [GitHub](https://github.com/prevner)
+
