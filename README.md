@@ -4,7 +4,8 @@
 
 Ce projet utilise un modèle de Deep Learning (LSTM) pour prédire le **Net Ecosystem Exchange (NEE_VUT_REF)**, un indicateur clé des flux de CO₂ dans les écosystèmes terrestres, à partir de conditions météorologiques passées issues du jeu de données [FLUXNET2015](https://fluxnet.org/data/fluxnet2015-dataset/).
 
-[![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tonutilisateur/ton-repo/blob/main/ton_notebook.ipynb)
+[![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prevner/Prediction_Flux_NetDeCarbone/blob/main/Prediction_Flux_NetDeCarbone.ipynb)
+
 
 ---
 
@@ -43,9 +44,10 @@ Le modèle suit les étapes suivantes :
 
 ## 🚀 Exécution rapide dans Google Colab
 
-Cliquez sur le badge ci-dessous pour lancer le notebook sans installation :
+Cliquez sur le badge ci-dessous pour lancer le notebook dans un nouvel onglet :
 
-[![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tonutilisateur/ton-repo/blob/main/ton_notebook.ipynb)
+[![Ouvrir dans Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/prevner/Prediction_Flux_NetDeCarbone/blob/main/Prediction_Flux_NetDeCarbone.ipynb)
+
 
 ---
 
